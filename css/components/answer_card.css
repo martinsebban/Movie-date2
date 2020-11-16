@@ -1,0 +1,7 @@
+.answer_card { 
+background: rgba(242, 242, 242, 1);
+width: 300px;
+border-radius: 40px;
+line-height: 50px;
+margin-top: 20px;
+}

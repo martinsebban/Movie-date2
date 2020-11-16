@@ -1,0 +1,7 @@
+.rectangle_card {
+	background: rgba(243, 241, 241, 1);
+	border-radius: 35px;
+	width: 350px;
+	height: 40px;
+	margin-top: 20px;
+}

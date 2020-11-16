@@ -1,0 +1,16 @@
+.gender_card {
+	background: rgb(240,4,117);
+	background: linear-gradient(90deg, rgba(240,4,117,1) 0%, rgba(221,11,122,1) 54%, rgba(147,39,143,1) 100%);
+	color: white;
+	border-radius: 40px;
+	width: 80px;
+	height: 60px;
+}
+
+.gender_card {
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	line-height: 50px;
+    margin: 10px;
+}

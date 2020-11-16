@@ -1,0 +1,12 @@
+.btn-w{
+	background: white;
+	border-radius: 40px;
+	width: 100px;
+	height: 50px;
+	color: rgb(253, 80, 104);
+	font-family: Source Sans Pro;
+	font-weight: bold;
+	font-size: 25px;
+	line-height: 2;
+	text-align: center;
+}

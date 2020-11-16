@@ -1,0 +1,15 @@
+.pop_up2{
+	
+	background: white;
+	border-radius: 40px;
+	height: 50;
+	box-shadow: 0px 10px 30px rgba(0,0,0,0.1);
+}
+
+
+.pop_up2{
+	position: absolute;
+    height: 300px;
+    top: 140px;
+    width: 300px;
+}

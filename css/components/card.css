@@ -1,0 +1,41 @@
+.card {
+	display: flex;
+	justify-content: space-around;
+	border-radius: 30px;
+	background: rgba(255, 255, 255, 1);
+	margin: 10px;
+	width: 400px;
+	position: relative;
+	top: -10px;
+	height: 70px;
+	box-shadow: 0px 10px 30px rgba(0,0,0,0.1);
+}
+
+.card img {
+	width: 65px;
+	height: 65px;
+	border-radius: 90px;
+	padding-top: 2px;
+}
+
+.card h2 {
+	font-size: 20px;
+	background: rgb(240,4,117);
+	background: -webkit-linear-gradient(0deg, rgba(240,4,117,1) 0%, rgba(221,11,122,1) 54%, rgba(147,39,143,1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;;
+	margin-top: -8px;
+    margin-right: -12px;
+    padding-left: 8px;
+}
+
+.card p {
+	margin-left:-40px;
+	margin-top: 25px;
+	font-family: Source Sans Pro;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15px;
+	line-height: 20px;
+	color: rgba(0, 0, 0, 1); 
+}

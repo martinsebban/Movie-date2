@@ -1,0 +1,13 @@
+.btn-connect{
+	background: #E4E4E4;
+	border-radius: 40px;
+	width: 250px;
+	height: 30px;
+	color: grey;
+	font-family: Source Sans Pro;
+	font-weight: lighter;
+	font-size: 18px;
+	text-align: left;
+	padding-left: 20px;
+	padding-top: 10px;
+}

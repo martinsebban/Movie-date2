@@ -1,0 +1,483 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;0,900;1,300;1,400;1,600;1,700&display=swap");
+
+@import url("components/container_home_page.css");
+@import url("components/btn-pink.css");
+@import url("components/btn-white.css");
+@import url("components/banner.css");
+@import url("components/pop_up.css");
+@import url("components/pop_up2.css");
+@import url("components/card.css");
+@import url("components/general_container.css");
+@import url("components/white_card.css");
+@import url("components/answer_card.css");
+@import url("components/profil_card.css");
+@import url("components/gender_card.css");
+@import url("components/general_container_my_profile.css");
+@import url("components/avatar.css");
+@import url("components/rectangle_card.css");
+@import url("components/btn-connect.css");
+
+
+/* no margin, no padding all pages */
+html, body{
+	height: 100%;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+
+/* CSS general */
+
+h1 {
+	font-family: Source Sans Pro;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 48px;
+	line-height: 60px;
+	color: white;
+}
+
+h2 {
+	font-family: Source Sans Pro;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 32px;
+	line-height: 45px;
+	color: white;
+}
+
+p {
+	font-family: Source Sans Pro;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15px;
+	line-height: 5px;
+	color: rgba(0, 0, 0, 1);
+
+}
+
+a {
+	text-decoration: none;
+}
+
+/* end CSS general */
+
+
+/* General container with the background image */
+
+.general_container {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	background-image: url(../images/cinema.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+}
+
+/* end General container with the background image */
+
+/* Css home page */
+
+header {
+	width: 90%;
+	display: flex;
+	margin: auto;
+	align-items: center;
+}
+
+.logo_container, 
+.bouton1 {
+	display: flex;
+}
+
+.logo_container {
+	flex: 1;
+	padding: 20px;
+	margin: 5px auto;
+}
+
+.text_logo {
+	font-size: 30px;
+	margin: 5px;
+}
+
+.logo {
+	width: 70px;
+	height: 70px;
+}
+
+.bouton1{
+	width: 100px;
+}
+
+.bouton2{
+	font-family: Source Sans Pro;
+}
+
+.presentation {
+	display: flex;
+	flex-direction: column;
+	height: 90%;
+	align-items: center;
+	line-height: 3;
+	margin: 220px 0px;
+}
+
+/* end CSS home page */
+
+
+/* CSS sig_in page*/
+
+.pop_up {
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+}
+
+.pop_up h2 {
+	background: rgb(240,4,117);
+	background: -webkit-linear-gradient(0deg, rgba(240,4,117,1) 0%, rgba(221,11,122,1) 54%, rgba(147,39,143,1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 30px;
+	margin: 0 auto;
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+
+.pop_up p {
+	color: black;
+	width: 250px;
+	margin: 0 auto;
+	line-height: 20px;
+	margin-bottom: 10px;
+}
+
+.pop_up a {
+	width: 250px;
+	margin: 0 auto;
+	line-height: 20px;
+	margin-top: 10px
+}
+
+.pop_up2 {
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+}
+
+.pop_up2 h2 {
+	background: rgb(240,4,117);
+	background: -webkit-linear-gradient(0deg, rgba(240,4,117,1) 0%, rgba(221,11,122,1) 54%, rgba(147,39,143,1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 30px;
+	margin: 0 auto;
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+
+
+.pop_up2 a {
+	width: 250px;
+	margin: 0 auto;
+	line-height: 20px;
+	margin-top: 10px
+}
+
+/* end CSS sig_in page*/
+
+
+/* CSS create an account page */
+
+.white_card {
+	display: flex;
+	flex-direction: column;
+    width: 80%;
+    margin: auto;
+    height: 650px;
+    margin-top: 5px;
+    justify-content: center;
+}
+
+.white_card h2{
+	background: rgb(240,4,117);
+	background: -webkit-linear-gradient(0deg, rgba(240,4,117,1) 0%, rgba(221,11,122,1) 54%, rgba(147,39,143,1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+	font-size: 50px;
+	justify-content: center;
+	margin: 0 auto;
+	margin-bottom: 70px;
+}
+
+.mes_questions {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	width: 90%;
+	margin: 0 auto;
+	height: 500px;
+	font-family: Source Sans Pro;
+}
+
+.question {
+	margin: 20px;
+	margin-right: 250px;
+}
+
+.question_gender {
+	display: flex;
+	margin-top: 20px;
+}
+
+.question_preferences {
+	display: flex;
+	margin-top: 20px;
+}
+
+.orga_gender {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 20px;
+}
+
+/* End create an accout page */
+
+/* my profile page */
+
+
+.container2 {
+	position: absolute;
+	width: 370px;
+	height: 470px;
+	left: 455px;
+	top: 60px;
+}
+
+.container2 h2 {
+	font-family: Source Sans Pro;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 32px;
+	line-height: 45px;
+	color: rgb(253, 80, 104);
+	margin-bottom: -10px;
+}
+
+.container2 p {	
+	font-weight: 600;
+	line-height: 140%
+}
+
+.bloc_pink {
+	background: rgb(240,4,117);
+	background: linear-gradient(90deg, rgba(240,4,117,1) 0%, rgba(221,11,122,1) 54%, rgba(147,39,143,1) 100%);
+	left: 10px;
+	height: 120px; 
+	width: 450px;
+	margin-bottom:30px;
+	display: inline-block;
+
+}
+
+.discussion {
+	background: rgba(243, 241, 241, 1);
+	display: flex;
+	flex-direction: column;
+	width: 450px;
+	height: 100%;
+	align-items: center;
+}
+
+.me-grey {
+	width: 300px;
+	height: 100px;
+	color: grey;
+}
+
+.flex_my_profile {
+	display: flex;
+}
+
+
+.block_message {
+	background: white;
+	display: flex;
+	flex-direction: column;
+	
+}
+
+.block_my_profile {
+	background: grey;
+	width: 813px;
+	height: 120px;
+	background: rgba(243, 241, 241, 1);
+}
+
+.block_my_profile2 {
+	background: rgba(243, 241, 241, 1);
+	width: 813px;
+	height: 100px;
+}
+
+.
+.block_my_profile img {
+	width: 80px;
+	border-radius: 100px;
+	height: 10px;
+}
+
+.Lorem_ipsum1 {
+	background: rgba(254, 207, 219, 1);
+	height: 380px;
+	border-radius: 40px;
+	width: 300px;
+	height: 40px;
+	justify-content: center;
+	margin-bottom: 70px;
+}
+
+.Lorem_ipsum2 {
+	background: rgba(243, 241, 241, 1);
+	height: 380px;
+	border-radius: 40px;
+	width: 300px;
+	height: 40px;
+	justify-content: center;
+	margin-bottom: -60px;
+}
+
+.messages {
+	display: flex;
+	flex-wrap: wrap;
+	height: 380px;
+	justify-content: space-around;
+}
+
+.mess1 {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.mess1 p {
+	padding-top: 17px;
+    padding-left: 20px;
+}
+
+.mess2  {
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.mess2 p {
+	padding-top: 17px;
+    padding-left: 20px;
+}
+
+.avatar {
+	width: 300px;
+	padding-top: 15px;
+    padding-left: 20px;
+    display: flex;
+}
+
+#avatar2 {
+	width: 300px;
+	padding-top: 15px;
+    padding-left: 300px;
+    display: flex;
+}
+
+#avatar2 img {
+	margin-left: -30px;
+}
+
+#avatar2 h2 {
+	background: rgb(240,4,117);
+	background: -webkit-linear-gradient(0deg, rgba(240,4,117,1) 0%, rgba(221,11,122,1) 54%, rgba(147,39,143,1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+	padding-top: 25px;
+}
+
+.avatar img {
+	margin: 0 auto;
+}
+
+.avatar h2 {
+	padding-top: 20px;
+    padding-right: 70px;
+}
+
+#answer_card_message {
+	background: white;
+	height: 50px;
+	width: 460px;
+	margin: auto;
+    margin-top: 25px;
+}
+
+#answer_card_message p {
+	padding-top:20px;
+	padding-left: 20px;
+}
+
+/*end my_profile page */
+
+/*get_super_like_page */
+
+#pop_up_superlike {
+	left: 480px;
+    top: 130px;
+    background: white;
+
+}
+
+#pop_up_superlike h2 {
+	color: white;
+}
+
+/*end get_super_like_page */
+
+/*card page*/
+
+
+.orga_rectangle_card {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	height: 300px;
+    margin-top: 100px;
+    margin-left: 35px;
+    width: 800px;
+}
+
+.orga_rectangle_card p {
+	padding-top: 15px;
+    padding-left: 10px;
+}
+
+#rectangle_card_two {
+	width: 300px;
+}
+
+#pay_card {
+	width: 300px;
+	height: 60px;
+}
+
+#pay_card h2 {
+	padding-top: 5px;
+	padding-left: 80px;
+	color: rgb(253, 80, 104);
+}
+
+/*end card page*/
