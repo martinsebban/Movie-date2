@@ -16,8 +16,6 @@
 @import url("components/avatar.css");
 @import url("components/rectangle_card.css");
 @import url("components/btn-connect.css");
-@import url("components/rectangle_flex.css")
-
 
 
 /* no margin, no padding all pages */
@@ -62,8 +60,22 @@ p {
 }
 
 a {
-	font-family: Source Sans Pro;
 	text-decoration: none;
+}
+
+ul {
+	display: flex;
+	margin-right: 20px;
+}
+
+li a {
+	padding-right: 60px;
+	padding-left: 60px;
+	color: white;
+}
+
+li a:hover {
+  color: red;
 }
 
 /* end CSS general */
@@ -79,6 +91,15 @@ a {
 	background-size: cover;
 	background-repeat: no-repeat;
 	position: relative;
+}
+
+
+.general_container_my_profile {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	position: relative;
+	background-size: cover;
 }
 
 /* end General container with the background image */
@@ -98,9 +119,8 @@ header {
 }
 
 .logo_container {
-	flex: 1;
 	padding: 20px;
-	margin: 5px auto;
+	margin-right: 75px;
 }
 
 .text_logo {
@@ -133,7 +153,7 @@ header {
 /* end CSS home page */
 
 
-/* CSS sign_in page*/
+/* CSS sig_in page*/
 
 .pop_up {
 	display: flex;
@@ -218,19 +238,21 @@ header {
 	margin-bottom: 70px;
 }
 
-.mes_questions {
+.form {
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
 	width: 90%;
 	margin: 0 auto;
 	height: 500px;
+	align-content: space-between;
 	font-family: Source Sans Pro;
 }
 
-.question {
-	margin: 20px;
-	margin-right: 250px;
+.form_question {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 60px;
 }
 
 .question_gender {
@@ -244,9 +266,7 @@ header {
 }
 
 .orga_gender {
-	display: flex;
-	flex-direction: column;
-	margin-bottom: 20px;
+	margin-bottom: 40px;
 }
 
 /* End create an accout page */
@@ -293,7 +313,7 @@ header {
 	display: flex;
 	flex-direction: column;
 	width: 450px;
-	height: 100%;
+	height: 100vh;
 	align-items: center;
 }
 
@@ -481,4 +501,160 @@ header {
 	padding-top: 5px;
 	padding-left: 80px;
 	color: rgb(253, 80, 104);
+}
+
+/*end card page*/
+
+#like_general_container {
+	background : white;
+}
+
+#image2 {
+	border-radius:250px;
+	height: 400px;
+	width: 400px;
+	position: relative;
+	left: 240px;
+	top: 30px;
+}
+
+.flex {
+	display: flex;
+}
+
+/*taste pag*/
+
+.container{
+    height: 90vh;
+    width: 90vw;
+    margin: 5vw 5vh;
+}
+
+.main1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 100%;
+}
+.flexbox{
+    display: flex;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 30px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+    height: 80%;
+    width: 90%;
+}
+
+.sidebar{
+    display:flex;
+    flex-direction: row;
+    align-items: flex-start;
+    height: 80%;
+    width: 20%;
+}
+
+.results{
+    width: 100%;
+    height: 100%;
+    display:flex;
+    flex-flow: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.filmcard{
+    display: flex;
+    align-items: flex-start;
+    background-color: rgba(243, 241, 241, 1);
+    padding: 10px;
+    margin: 10px 0px;
+    width: 45%;
+    height: 25%;
+    border-radius: 5px;
+}
+
+.moviedesc{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.nextbtn{
+    width: 90%;
+    text-align: end;
+}
+
+.sortby{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 10px;
+    padding:10px;
+    border-radius: 5px;
+    background-color: rgba(243, 241, 241, 1);
+}
+
+.flexbox ul{
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    padding-left: 0px;
+}
+
+.flexbox li{
+    background-color: rgba(243, 241, 241, 1);
+    padding: 20px;
+    margin: 25px;
+    border-radius: 5px;
+}
+
+.flexbox h2{
+    background: -webkit-linear-gradient(0deg, rgba(240,4,117,1) 0%, rgba(221,11,122,1) 54%, rgba(147,39,143,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.filmcard img{
+    width: 80px;
+    height: 80px;
+}
+
+.moviedesc h2{
+    font-size: 16px;
+}
+
+.moviedesc p{
+    line-height: 12px;
+    padding-bottom: 10px;
+}
+
+.flexbox a{
+    font-weight: bolder;
+    color: black;
+}
+
+.nextbtn a{
+    color: white;
+    padding: 5px 15px;
+    font-size: 20px;
+}
+
+#title{
+    margin-top: 30px;
 }
