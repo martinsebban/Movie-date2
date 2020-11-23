@@ -16,7 +16,8 @@
 @import url("components/avatar.css");
 @import url("components/rectangle_card.css");
 @import url("components/btn-connect.css");
-@import url("components/rectangle_flex.css");
+@import url("components/rectangle_flex.css")
+
 
 
 /* no margin, no padding all pages */
@@ -481,10 +482,3 @@ header {
 	padding-left: 80px;
 	color: rgb(253, 80, 104);
 }
-
-/* CSS tastes page */
-
-
-
-
-/*end card page*/
