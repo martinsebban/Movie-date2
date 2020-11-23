@@ -19,6 +19,7 @@
 @import url("components/rectangle_flex.css")
 
 
+
 /* no margin, no padding all pages */
 html, body{
 	height: 100%;
@@ -61,6 +62,7 @@ p {
 }
 
 a {
+	font-family: Source Sans Pro;
 	text-decoration: none;
 }
 
@@ -131,7 +133,7 @@ header {
 /* end CSS home page */
 
 
-/* CSS sig_in page*/
+/* CSS sign_in page*/
 
 .pop_up {
 	display: flex;
@@ -480,5 +482,3 @@ header {
 	padding-left: 80px;
 	color: rgb(253, 80, 104);
 }
-
-/*end card page*/
