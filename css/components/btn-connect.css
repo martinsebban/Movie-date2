@@ -11,3 +11,8 @@
 	padding-left: 20px;
 	padding-top: 10px;
 }
+
+.btn-connect:hover{
+	background: #494949;
+	color: white;
+}
