@@ -10,3 +10,9 @@
 	line-height: 2;
 	text-align: center;
 }
+
+.btn-w:hover{
+	color: white;
+	background: rgb(240,4,117);
+	background: linear-gradient(90deg, rgba(240,4,117,1) 0%, rgba(221,11,122,1) 54%, rgba(147,39,143,1) 100%);
+}
