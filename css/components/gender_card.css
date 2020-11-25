@@ -14,3 +14,8 @@
 	line-height: 50px;
     margin: 10px;
 }
+
+.gender_card:hover{
+	color: rgb(253, 80, 104);
+	background: #CDCDCD;
+}
