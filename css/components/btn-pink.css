@@ -11,3 +11,8 @@ font-size: 30px;
 padding: 15px 20px;
 
 }
+
+.btn-p:hover{
+	color: rgb(253, 80, 104);
+	background: white;
+}
