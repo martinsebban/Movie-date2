@@ -70,12 +70,74 @@ ul {
 
 li a {
 	padding-right: 60px;
-	padding-left: 60px;
+
 	color: white;
 }
 
 li a:hover {
   color: red;
+}
+
+.load {
+	animation: slide 2s;
+}
+
+.slider {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 100vh;
+	animation: slide 25s infinite;
+
+}
+
+@keyframes slide {
+	0% {
+		background-image: url(../images/cinema.jpg)
+	}
+
+	15% {
+		background-image: url(../images/cinema.jpg)
+	}
+	15.01% {
+		background-image: url(../images/image3.jpg)
+	}
+	30% {
+		background-image: url(../images/image3.jpg)
+	}
+	30.01% {
+		background-image: url(../images/image4.jpg)
+	}
+	45% {
+		background-image: url(../images/image4.jpg)
+	}
+	45.01% {
+		background-image: url(../images/cinema.jpg)
+	}
+	60.00% {
+		background-image: url(../images/cinema.jpg)
+	}
+	60.01% {
+		background-image: url(../images/image3.jpg)
+	}
+	75%{
+		background-image: url(../images/image3.jpg)
+	}
+	75.01% {
+		background-image: url(../images/image4.jpg)
+	}
+	90% {
+		background-image: url(../images/image4.jpg)
+	}
+
+	90.01% {
+		background-image: url(../images/cinema.jpg)
+	}
+	100% {
+		background-image: url(../images/cinema.jpg)
+	}
+
 }
 
 /* end CSS general */
@@ -87,10 +149,6 @@ li a:hover {
 	height: 100%;
 	width: 100%;
 	margin: 0;
-	background-image: url(../images/cinema.jpg);
-	background-size: cover;
-	background-repeat: no-repeat;
-	position: relative;
 }
 
 
@@ -111,6 +169,7 @@ header {
 	display: flex;
 	margin: auto;
 	align-items: center;
+	justify-content: space-around;
 }
 
 .menu{
@@ -282,6 +341,15 @@ header {
 	margin-bottom: 40px;
 }
 
+
+.slider2 {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	animation: slide 25s infinite;
+
+}
 /* End create an accout page */
 
 /* my profile page */
@@ -317,7 +385,7 @@ header {
 	height: 120px; 
 	width: 450px;
 	margin-bottom:30px;
-	display: inline-block;
+	display: flex;
 
 }
 
@@ -326,7 +394,6 @@ header {
 	display: flex;
 	flex-direction: column;
 	width: 450px;
-	height: 100vh;
 	align-items: center;
 }
 
@@ -345,12 +412,13 @@ header {
 	background: white;
 	display: flex;
 	flex-direction: column;
+	width: 100%;
 	
 }
 
 .block_my_profile {
 	background: grey;
-	width: 813px;
+	width: 100%;
 	height: 120px;
 	background: rgba(243, 241, 241, 1);
 }
@@ -358,7 +426,8 @@ header {
 .block_my_profile2 {
 	background: rgba(243, 241, 241, 1);
 	width: 813px;
-	height: 100px;
+	width: 100%;
+	height: 110px;
 }
 
 .
@@ -457,8 +526,10 @@ header {
 	background: white;
 	height: 50px;
 	width: 460px;
-	margin: auto;
     margin-top: 25px;
+    border: none;
+    position: relative;
+    left: 200px;
 }
 
 #answer_card_message p {
@@ -734,4 +805,143 @@ h3 {
 	background: -webkit-linear-gradient(90deg, rgba(107,0,52,1) 0%, rgba(78,5,43,1) 54%, rgba(43,11,42,1) 100%);
 	-webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+#image2 {
+    border-radius: 250px;
+    height: 400px;
+    width: 400px;
+    position: relative;
+    left: 240px;
+    top: 30px;
+}
+
+label h2 {
+	color: black;
+
+}
+
+label img {
+	height: 60px;
+	width: 60px;
+}
+
+.rating {
+	display: flex;
+	position: relative;
+	flex-direction: row-reverse;
+	top: 450px;
+	right: 320px;
+}
+
+.rating input {
+	display: none;
+}
+
+.rating label {
+	position: relative;
+	width: 0;
+	height: 128px;
+	cursor: pointer;
+	transition: 0.5s;
+	filter: white;
+	text-align: center; 
+	opacity: 0;
+}
+
+.other_div {
+	width: 100%;
+	background-image: url(../images/jonat.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin: 10px;
+	border : 3px solid pink;
+	box-shadow: 10px 10px 5px grey;
+}
+
+.rating:hover label 
+{
+	width: 100px;
+	opacity: 0.2;
+}
+
+.rating input:hover + label,
+.rating input:checked + label 
+{
+	filter: grayscale(0);
+	opacity: 1;
+	width: 160px;
+}
+
+.rating label h4 {
+	color: white;
+	font-size: 24px;
+	padding-top: 10px;
+	font-weight: 500;
+	white-space: nowrap;
+	opacity: 0;
+	transform: translateY(-50px) scale(0.5);
+	transition: 0.5s;
+}
+
+.rating input:hover + label h4,
+.rating input:checked + label h4
+{
+	opacity: 1;
+	transform: translateY(0) scale(0.5);
+}
+
+.text {
+	position: relative;
+	top: -80px;
+	left: 75%;
+	transform: translateX(-50%);
+	color: white;
+	width: 500px;
+	font-weight: 700;
+	letter-spacing: 2px;
+	text-align: center;
+	white-space: nowrap;
+	font-size: 36px;
+}
+
+.person {
+	width: 200px;
+	text-align: center;
+	position: relative;
+	left: 310px;
+	top: 50px;
+}
+
+.person p{
+	font-size: 40px;
+	position: relative;
+	color: white;
+	width: 250px;
+
+}
+
+.image_btn {
+	height: 50px;
+	width: 50px;
+	position: relative;
+	right: 15px;
+	top: 10px;
+
+}
+
+.header_create {
+	display: flex;
+}
+
+#btn_p_create {
+	position: relative;
+    top: 200px;
+    left: 170px;
+}
+
+.bloc_pink a img{
+	position: relative;
+	top: 45px;
+	left: 50px;
 }
